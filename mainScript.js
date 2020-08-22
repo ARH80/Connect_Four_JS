@@ -44,9 +44,10 @@ function checkTheBoard(player) {
         element2 = squares[winningArrays[j][2]]
         element3 = squares[winningArrays[j][3]]
 
-        if(element0.classList.contains(player) && element1.classList.contains(player) && element2.classList.contains(player) && element3.classList.contains(player)) {
-            
+        if(element0.classList.contains(player) && element1.classList.contains(player) && 
+        element2.classList.contains(player) && element3.classList.contains(player)) {
             alert(player + ' won')
+            location.reload()
         }
     }
 }    
